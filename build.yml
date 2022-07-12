@@ -1,0 +1,19 @@
+package(default_testonly = True)
+
+py_test(
+    name = "foo_test",
+    srcs = glob(["*.py"]),
+    data = [
+        "//data/production/foo:startfoo",
+        "//foo",
+        "//third_party/java/jdk:jdk-k8",
+    ],
+    flaky = True,
+    deps = [
+        ":check_bar_lib",
+        ":foo_data_check",
+        ":pick_foo_port",
+        "//pyglib",
+        "//testing/pybase",
+    ],
+)
