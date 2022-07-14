@@ -19,7 +19,7 @@ product:
       price       : 450.00
    - sku         : BL4438H
       quantity    : 1
-      description : Super Hoop
+      description : abc
       price       : 2392.00
 tax  : 251.42
 total: 4443.52
